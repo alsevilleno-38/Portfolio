@@ -1,15 +1,83 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap");
 * {
-  font-family: "lato"; }
+  font-family: "lato";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+p {
+  margin: 0; }
 
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0; }
 
-.link > i {
-  color: var(--white);
-  background-color: var(--gray-dark); }
+p {
+  margin: 0; }
 
-.icons {
-  font-size: 1.5rem; }
+ul {
+  margin: 0; }
+
+.links {
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  margin-bottom: 0; }
+  .links > * {
+    margin-right: 1.6rem; }
+    .links > * :last-child {
+      margin-right: 0; }
+  .links li i {
+    transition: color 0.2s ease-in-out; }
+  .links li:hover i {
+    color: #28a745; }
+
+.nav {
+  padding: 0.1px; }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.wrapper-burger {
+  position: relative;
+  width: 32px;
+  margin-right: 2rem; }
+
+.check-burger {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+  width: 100%;
+  height: 100%; }
+  .check-burger:hover ~ .hamburger > div {
+    background-color: #fd7e14; }
+  .check-burger:checked ~ .hamburger > div {
+    transform: rotate(135deg); }
+    .check-burger:checked ~ .hamburger > div:first-child, .check-burger:checked ~ .hamburger > div:last-child {
+      transform: rotate(90deg); }
+  .check-burger:checked:hover ~ .hamburger > div {
+    background-color: #28a745; }
+
+.hamburger {
+  display: flex;
+  width: 100%;
+  flex-direction: column; }
+  .hamburger > div {
+    background-color: #343a40;
+    border-radius: 5px;
+    height: 4px;
+    margin-bottom: 6px;
+    transition: background-color 0.2s ease-in-out, transform 0.3s ease-in-out; }
+    .hamburger > div:last-child {
+      margin-bottom: 0; }
+  .hamburger:hover > div {
+    background-color: #fd7e14; }
+
+.container {
+  margin-top: 1rem; }
