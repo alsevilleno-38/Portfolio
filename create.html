@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">    
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- Bootstrap 4 JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="css/create.css">    
+</head>
+<body class="bg-light">        
+    <header class="banner text-center py-1 bg-info text-white">
+        <h3 class="lead">
+            There's a newer version of Bootstrap 4!
+        </h3>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light pb-3 sticky-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h3 class="display-4 d-inline-block mr-1">Trucker</h3>
+                <i class="fas fa-truck"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" id="admission-btn">
+                        Admission
+                        </a>      
+                        <ul class="dropdown-menu bg-light" id="admission-dropdown">
+                            <li><a class="dropdown-item" href="#">Undergraduate</a></li>
+                            <li><a class="dropdown-item" href="#">Masters</a></li>                        
+                            <li><a class="dropdown-item" href="#">PhD</a></li>
+                        </ul>   
+                
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>           
+                </ul>
+                <form class="d-flex ml-auto mr-2">                
+                    <input class="form-control rounded mr-2" type="search" placeholder="Search">        
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>       
+    <section>
+       <div class="jumbotron alert alert-dismissible fade show" id="alert-safe">
+           <div class="close" data-dismiss="alert">&times;</div>
+           <h1 class="display-4">Helping to keep each other safe</h1>
+           <p class="lead mt-3">We’re actively monitoring the COVID-19 situation and are continually working to help keep those who rely on our platform healthy and safe.</p>
+           <a href="" class="d-block mt-4">Go to Uber’s COVID-19 hub</a>
+           <a href="" class="d-block mt-2"> Read about our Door-to-Door Safety Standard</a>        
+       </div>
+    </section>
+    <section id="content">
+        <div class="container p-1">
+            <div class="row mt-4">
+                <div class="col-s-12 col-md-6 col-lg-6 order-now">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Discover delicious eats</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="mb-4">Order delivery from restaurants you love.</p>
+                            <button class="btn btn-outline-dark" data-toggle="collapse" data-target="#form-signup">Order Now</button>
+                        </div>
+                        <div class="card-footer mb-3">
+                            <p class="mb-1">Never miss a beat of this great food.</p>
+                            <a href="#">Own a restaurant? Partner with Uber Eats</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-s-12 col-md-6 col-lg-6 order-now" id="form-signup">
+                    <div class="card">
+                        <div class="container">
+                            <form action="" class="mt-2">
+                                <fieldset>
+                                    <legend>Fill Out</legend>
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" class="form-control" id="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="status">Status</label>
+                                        <input type="text" class="form-control" id="status">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="gender">Gender</label>
+                                        <select name="gender" class="custom-select" id="gender">
+                                            <option selected>--Select One--</option>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="other">Other</option>
+                                          </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-control-plaintext">Favorite Foods</label>                    
+                                        <div class="custom-control custom-switch custom-control-inline">
+                                            <input type="checkbox" class="custom-control-input" id="banana">
+                                            <label class="custom-control-label" for="banana">Banana</label>
+                                        </div>
+                                        <div class="custom-control custom-switch custom-control-inline">
+                                            <input type="checkbox" class="custom-control-input" id="apple">
+                                            <label class="custom-control-label" for="apple">Apple</label>
+                                        </div>
+                                        <div class="custom-control custom-switch custom-control-inline">
+                                            <input type="checkbox" class="custom-control-input" id="grapes">
+                                            <label class="custom-control-label" for="grapes">Grapes</label>
+                                        </div>                
+                                    </div>
+                                </fieldset>                                                           
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="uber-eats">
+        <div class="container">
+            <div class="uber-title">
+                <h3>Uber for Business</h3>
+                <p class="lead">The power of Uber in everyday business</p>
+            </div>
+            <div class="row p-2 mt-4" id="uber-exp">
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <div class="card">                        
+                        <img class="card-img-top" src="img/uber1.png" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Work meals
+                            </h3>
+                            <p class="card-text">
+                                Delight your employees with their favorite meals delivered directly to anywhere they work.
+                            </p>
+                        </div>                                                                                
+                    </div>
+                </div>                
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <div class="card">                                      
+                        <img class="card-img-top" src="img/uber2.png" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Employee rides
+                            </h3>
+                            <p class="card-text">
+                                Take the work out of work-related trips. Create ground travel and commute programs for employees.
+                            </p>
+                        </div>  
+                    </div>                    
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <div class="card">
+                        <img class="card-img-top" src="img/uber3.png" alt="">                    
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Courtesy rides
+                            </h3>
+                            <p class="card-text">
+                                Aim to impress. Arrange door-to-door rides for your customers, clients, and guests.
+                            </p>
+                        </div>                                                
+                    </div>                        
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="js/create.js"></script>
+</html>

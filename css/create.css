@@ -70,65 +70,85 @@ img {
   .hamburger:hover > div {
     background-color: #fd7e14; }
 
-p {
-  margin: 0; }
+#navbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 
-ul {
-  margin: 0; }
-
-a {
-  text-decoration: none; }
-  a:hover {
-    text-decoration: none; }
-
-.brand {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: 2rem; }
-
-h1.logo {
-  margin: 0;
-  margin-right: 0.5rem;
-  font-size: 1.5rem; }
-
-.logo a {
-  color: #343a40; }
-
-.logo-brand i {
+.navbar-brand h3 {
   font-size: 2rem; }
 
-.main-nav {
-  padding: 0.5rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center; }
+#alert-safe {
+  position: relative;
+  padding: 2rem 4rem;
+  background-color: #e9ecef;
+  border-radius: 0.3rem;
+  margin-bottom: 0; }
+  #alert-safe .close {
+    position: absolute;
+    float: unset;
+    top: 1rem;
+    right: 1rem; }
 
-.links li {
-  margin-right: 1.5rem; }
-  .links li:last-child {
-    margin-right: 0rem; }
-  .links li a i {
-    font-size: 2rem;
-    color: #343a40; }
+.test {
+  color: inherit; }
 
-.wrapper-nav {
-  color: #343a40; }
+@media screen and (min-width: 0) {
+  .nav-item.dropdown .dropdown-menu {
+    background-color: inherit;
+    border: none; }
+    .nav-item.dropdown .dropdown-menu li a:hover {
+      background-color: #6c757d;
+      color: #fff; } }
 
-.main-section {
-  margin-top: 1.5rem; }
+@media screen and (max-width: 992px) {
+  #uber-exp > div:nth-child(3) {
+    margin-top: 3rem; } }
 
-.signup-form {
-  width: 70%;
-  margin: auto; }
+@media screen and (min-width: 992px) {
+  #main-nav {
+    margin-left: 3rem; }
+  #uber-exp .card {
+    height: 100%; } }
 
-.list-checkbox > * {
-  margin-right: 1rem; }
-  .list-checkbox > *:last-child {
-    margin-right: 0; }
+@media screen and (min-width: 1200px) {
+  .nav-item.dropdown .dropdown-menu {
+    border: 1px solid rgba(0, 0, 0, 0.2); } }
 
-@media screen and (max-width: 576px) {
-  .links {
-    display: none; }
-  .nav-burger {
-    display: block !important; } }
+.banner h3 {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  letter-spacing: 1px; }
+
+#content {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/computer.jpeg");
+  height: 80vh;
+  width: 100%;
+  background-size: 100%;
+  background-position: center center; }
+
+.order-now .card {
+  background-color: #fff;
+  height: 100%; }
+
+.order-now .card-header {
+  border-bottom: 0; }
+  .order-now .card-header h3 {
+    font-size: 2.5rem;
+    line-height: 1.5; }
+
+.order-now .card-body p {
+  font-size: 1.3rem;
+  line-height: 1; }
+
+.order-now .card-footer {
+  border-top: 0; }
+  .order-now .card-footer a {
+    font-size: 1rem;
+    line-height: 1; }
+
+.uber-title {
+  line-height: 1.6; }
+  .uber-title h3 {
+    margin-top: 2.5rem; }
+  .uber-title p {
+    margin-top: 1.2rem;
+    font-size: 1.2rem; }

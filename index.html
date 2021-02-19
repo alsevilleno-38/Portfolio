@@ -4,34 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap-4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>    
 </head>
-<body>
-    <nav class="nav">
+<body class="bg-light ">
+    <nav class=" navbar navbar-expand-sm wrapper-nav">
         <div class="container">
-            <div class="wrapper-burger">
-                <input class="check-burger" type="checkbox" name="" id="" >
+            <div class="brand">
+                <h1 class="logo"><a href="#">Arbiter</a></h1>
+                <div class="logo-brand">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+            </div>
+            <ul class="navbar-nav links">
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-github-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+            </ul>
+            <button class="btn btn-outline-secondary">Sign In</button>
+            <div class="wrapper-burger nav-burger">
+                <input type="checkbox" class="check-burger" name="" id="">
                 <div class="hamburger">
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
-
             </div>
-            <ul class="links">
-                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-                <li><a href="#"><i class="fab fa-github-square"></i></a></li>
-            </ul>
         </div>
-    </nav>    
+    </nav>
+    <section class="main-section">
+        <div class="container signup-form">
+            <h1 class="lead font-weight-bold mb-3">Sign Up Form</h1>
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control form-control-lg" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control form-control-lg" id="email">
+                </div>
+                <div class="form-group">
+                    <label class="form-control-plaintext">Favorite Foods</label>                    
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="male" name="gender" value="male">
+                        <label class="custom-control-label" for="male">Male</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="female" name="gender" value="female">
+                        <label class="custom-control-label" for="female">Female</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="none" name="gender" value="none">
+                        <label class="custom-control-label" for="none">None</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-plaintext">Favorite Foods</label>                    
+                    <div class="custom-control custom-switch custom-control-inline">
+                        <input type="checkbox" class="custom-control-input" id="banana">
+                        <label class="custom-control-label" for="banana">Banana</label>
+                    </div>
+                    <div class="custom-control custom-switch custom-control-inline">
+                        <input type="checkbox" class="custom-control-input" id="apple">
+                        <label class="custom-control-label" for="apple">Apple</label>
+                    </div>
+                    <div class="custom-control custom-switch custom-control-inline">
+                        <input type="checkbox" class="custom-control-input" id="grapes">
+                        <label class="custom-control-label" for="grapes">Grapes</label>
+                    </div>                
+                </div>
+                <div class="form-group">
+                    <label for="socio-eco">Socio-Economic</label>
+                    <select id="socio-eco" name="socio-eco" class="custom-select custom-select-md">
+                        <option selected>--Select--</option>
+                        <option value="single">Single</option>
+                        <option value="divorced">Divorced</option>
+                        <option value="married">Married</option>
+                      </select>
+                </div>
+                <div class="form-group">                    
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="browse-img">
+                        <label class="custom-file-label" for="browse-img">Choose file</label>
+                    </div>                    
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-outline-info" value="Submit">
+                </div>
+            </form>
+        </div>
+    </section>
 </body>
 <script src="js/index.js"></script>
 </html>
