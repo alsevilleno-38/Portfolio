@@ -1,0 +1,23 @@
+@import "base/styles.scss";
+
+.container {
+    max-width: 70%;
+    margin: auto;
+    margin-top: 0.4rem;
+}
+.btn {
+    outline: none;
+    border: none;
+    background-color: lighten($orange, 5%);
+    color: $white;
+    padding: 1rem 1.5rem;
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+    &:hover {
+        background-color: darken($orange, 5%);        
+    }
+}
+
