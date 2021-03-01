@@ -1,0 +1,187 @@
+@import "base/styles";
+
+
+.logo-brand {
+    h3 {
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+    img {
+        width: 100px;
+    }
+}
+
+#nav {
+    height: 70px;
+    background-color: black;
+    color: white;
+    padding: 0 1rem;
+    transition: background-color 0.3s ease-in-out;
+
+    &.nav-scroll {
+        background-color: white;
+        color: black;
+        #nav-icons {
+            li {
+                a {
+                    color: black;
+                }
+            }
+        }
+        .logo-brand {
+            h3 {
+                a {
+                    color: black;
+                }
+            }
+        }
+        .login {
+            a {
+                color: black;
+
+            }
+
+        }
+    }
+    
+}
+
+
+
+
+#nav-icons {
+    li {
+        margin-right: 1.4rem;        
+        &:last-child {
+            margin-right: 0;        
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+    }
+
+}
+
+.logo-brand {
+    img {
+        color: white;
+    }
+}
+
+#search { 
+    cursor: pointer;  
+}
+
+.login {
+    a {
+        color: white;
+    }
+}
+.cookies {
+    z-index: 2;
+    padding: 1rem;
+    position: fixed;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    transition: transform 0.3s ease-in-out
+    img {
+        float: left;
+    }
+    p {
+        position: relative;
+        left: 10px;
+    }
+    button {
+        outline: none;
+        width: 10rem;
+        border: none;
+    }
+    
+    &.nav-scroll {
+        transform: translateX(-50%) translateY(100%);
+    }
+}
+#poster {
+    height: 150vh;
+    width: 100%;
+    background-image: url("https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3tGUH49Fuv4fTCk2xPvRWU/6d4d3f7ab695e8b9bf60408487c1bcdd/FayeLau_S4_Poster_16x9_no_logo.jpg");
+    background-position: top;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;    
+}
+
+.extra {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 40%;
+    left: 40%;
+    background-color: transparent;
+    button {
+        outline: none;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: white;
+        font-size: 4rem;                
+        width: 7rem;
+        padding: 0.3rem 0.3rem;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;             
+        transition: background-color 0.3s ease-in-out;               
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+    }
+
+}
+.poster-content {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+.poster-text {
+    h2 {
+        text-transform: uppercase;
+    }        
+}
+
+.poster-btns {                
+    button {
+        outline: none;
+        border: none;        
+        border-radius: 30px;
+        width: 10rem;
+        padding: 0.7rem 1.8rem;
+    }    
+}
+@media screen and (max-width: $breakpoint-md) {
+    #poster {
+        height: 100vw;                       
+    }
+    .poster-content {
+        height: 50%;                            
+        top: 75%;            
+    }
+    .poster-btns {
+        button {
+            border-radius: 30px;
+            width: 8rem;
+            padding: 0.4rem 1.2rem;
+            font-size: 0.8rem;
+        }
+    }
+
+}
