@@ -1,14 +1,13 @@
-name = "Old"
+class Student:
+    pass
 
-def look(name):
-    
-    def create():
-        print(name)    
+def method_one():
+    print("One")
+    return 1
 
-    return create
+def method_two():
+    print("Two")
+    return 2
 
-
-test = look()
-test()
 
 
