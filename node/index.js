@@ -1,14 +1,5 @@
-const sym1 = Symbol();
-const sym2 = Symbol();
+import _ from "lodash";
+let obj = { name: "Pam", age: 200 }
 
-// const idSym = Symbol("id")
-class Student {
-    constructor(name="default", age=100, gender="None") {
-        this.name = name;
-        this.age = age
-        this.gender = gender
-    }
-}
+console.log({...obj, desc: "devops"})
 
-let s1 = new Student();
-s1.grades = 100

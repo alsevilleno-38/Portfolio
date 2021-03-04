@@ -7,10 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "node-sass -rw scss/ -o css --recursive"
   },
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "lodash": "^4.17.21",
     "node-sass": "^5.0.0"
   }
 }
