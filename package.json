@@ -10,6 +10,7 @@
     "debug": "nodemon --inspect index.js",
     "output-debug": "nodemon --inspect index.js > log.log"
   },
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -20,6 +21,8 @@
     "nodemailer": "^6.5.0",
     "nodemon": "^2.0.7",
     "open": "^8.0.2"
-  },
-  "type": "module"
+  },  
+  "lodash": "^4.17.21",
+  "node-sass": "^5.0.0"
+  }
 }
