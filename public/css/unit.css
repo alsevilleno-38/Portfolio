@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap");
-img {
-  display: inline-block; }
-
-button {
+input, label, span, img, button, a {
   display: inline-block; }
 
 .row-flex {
@@ -84,85 +81,21 @@ html, body {
   .hamburger:hover > div {
     background-color: #fd7e14; }
 
-#navbar {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+.container {
+  max-width: 70%;
+  margin: auto;
+  margin-top: 0.4rem; }
 
-.navbar-brand h3 {
-  font-size: 2rem; }
-
-#alert-safe {
-  position: relative;
-  padding: 2rem 4rem;
-  background-color: #e9ecef;
-  border-radius: 0.3rem;
-  margin-bottom: 0; }
-  #alert-safe .close {
-    position: absolute;
-    float: unset;
-    top: 1rem;
-    right: 1rem; }
-
-.test {
-  color: inherit; }
-
-@media screen and (min-width: 0) {
-  .nav-item.dropdown .dropdown-menu {
-    background-color: inherit;
-    border: none; }
-    .nav-item.dropdown .dropdown-menu li a:hover {
-      background-color: #6c757d;
-      color: #fff; } }
-
-@media screen and (max-width: 992px) {
-  #uber-exp > div:nth-child(3) {
-    margin-top: 3rem; } }
-
-@media screen and (min-width: 992px) {
-  #main-nav {
-    margin-left: 3rem; }
-  #uber-exp .card {
-    height: 100%; } }
-
-@media screen and (min-width: 1200px) {
-  .nav-item.dropdown .dropdown-menu {
-    border: 1px solid rgba(0, 0, 0, 0.2); } }
-
-.banner h3 {
-  font-size: 1.6rem;
-  line-height: 1.2;
-  letter-spacing: 1px; }
-
-#content {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/computer.jpeg");
-  height: 80vh;
-  width: 100%;
-  background-size: 100%;
-  background-position: center center; }
-
-.order-now .card {
-  background-color: #fff;
-  height: 100%; }
-
-.order-now .card-header {
-  border-bottom: 0; }
-  .order-now .card-header h3 {
-    font-size: 2.5rem;
-    line-height: 1.5; }
-
-.order-now .card-body p {
-  font-size: 1.3rem;
-  line-height: 1; }
-
-.order-now .card-footer {
-  border-top: 0; }
-  .order-now .card-footer a {
-    font-size: 1rem;
-    line-height: 1; }
-
-.uber-title {
-  line-height: 1.6; }
-  .uber-title h3 {
-    margin-top: 2.5rem; }
-  .uber-title p {
-    margin-top: 1.2rem;
-    font-size: 1.2rem; }
+.btn {
+  outline: none;
+  border: none;
+  background-color: #fd8c2d;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out; }
+  .btn:hover {
+    background-color: #f57102; }

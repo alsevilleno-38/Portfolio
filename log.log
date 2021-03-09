@@ -1,0 +1,78 @@
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,html,css[39m
+[32m[nodemon] starting `node --inspect index.js`[39m
+App running at port 3000...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect index.js`[39m
+App running at port 3000...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect index.js`[39m
+App running at port 3000...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect index.js`[39m
+App running at port 3000...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect index.js`[39m
+App running at port 3000...
+[Object: null prototype] {
+  username: '[object Object]',
+  password: '[object Object]'
+}
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect index.js`[39m
+App running at port 3000...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect index.js`[39m
+App running at port 3000...
+[Object: null prototype] {
+  username: '[object Object]',
+  password: '[object Object]'
+}
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect index.js`[39m
+App running at port 3000...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect index.js`[39m
+App running at port 3000...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect index.js`[39m
+App running at port 3000...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect index.js`[39m
+App running at port 3000...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect index.js`[39m
+App running at port 3000...
+[object Object]
+undefined
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect index.js`[39m
+App running at port 3000...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect index.js`[39m
+App running at port 3000...
+[Object: null prototype] {
+  username: '[object Object]',
+  password: '[object Object]'
+}
+[object Object]
+undefined
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect index.js`[39m
+There is an error processing the routers
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect index.js`[39m
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect index.js`[39m
+App running at port 3000...
+{ username: '[object Object]', password: '[object Object]' }
+[object Object]
+undefined
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --inspect index.js`[39m
+App running at port 3000...

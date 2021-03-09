@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extract</title>
+      <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">   
+    <link rel="stylesheet" href="css/extract.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="form__wrapper">
+        <section id="sign-up-section">
+            <a href="#" class="link__brand">
+                <i class="fas fa-flask"></i>
+            </a>
+            <h3 class="header__brand">Sign in to GitHub</h3>
+            <form action="" class="form__signin" method="POST">
+                <div class="input-group">
+                    <label for="username">Username or email address</label>
+                    <input type="text" id="username" name="username">            
+                </div>
+                <div class="input-group">
+                    <div class="label-group">
+                        <label for="password">Password</label>
+                        <a href="">Forgot password?</a>
+                    </div>                    
+                    <input type="password" id="password" name="password">                                
+                    
+                </div>
+                <div class="input-group" id="display-password">
+                    <label for="d-pass">Display Password</label>                
+                    <input type="checkbox" name="" id="d-pass">                           
+                </div>
+                <div class="input-group" id="submit">
+                    <input type="submit" value="Sign in">
+                </div>
+            </form>    
+            <div id="sign-up-account">
+                <span class="title__app">New to Github?</span>
+                <a href="#">Create an account.</a>
+            </div>        
+        </section>
+        <footer id="footer">
+            <ul>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Security</a></li>
+                <li><a href="">Contact Github</a></li>                
+            </ul>
+        </footer>
+        <div id="contain">
+        
+        </div>
+    </div>
+   
+</body>
+<script src="js/extract.js"></script>
+</html>

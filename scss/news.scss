@@ -1,0 +1,26 @@
+@import "base/styles";
+
+
+.form-fill {
+    margin: 1rem;
+    width: 250px;
+}
+.submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-fill {
+    input:not([type="submit"]):not([type="checkbox"]) {
+        width: 60%;
+    }    
+    .sign-check {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+    }
+    #sign-toggle {
+        margin-left: 0.4rem;
+    }
+}

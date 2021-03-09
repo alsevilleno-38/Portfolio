@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap");
+input, label, span, img, button, a {
+  display: inline-block; }
+
+.row-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.column-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+* {
+  font-family: "lato";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+p, h1, h2, h3 {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+html, body {
+  padding: 0.1px;
+  width: 100%; }
+
+.wrapper-burger {
+  position: relative;
+  width: 32px;
+  margin-right: 2rem; }
+
+.check-burger {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+  width: 100%;
+  height: 100%; }
+  .check-burger:hover ~ .hamburger > div {
+    background-color: #fd7e14; }
+  .check-burger:checked ~ .hamburger > div:nth-child(1) {
+    transform: translateY(10px) rotate(135deg); }
+  .check-burger:checked ~ .hamburger > div:nth-child(2) {
+    opacity: 0; }
+  .check-burger:checked ~ .hamburger > div:nth-child(3) {
+    transform: translateY(-10px) rotate(-135deg); }
+  .check-burger:checked:hover ~ .hamburger > div {
+    background-color: #28a745; }
+
+.nav-burger {
+  display: none !important;
+  margin: 0;
+  margin-left: auto;
+  margin-right: 2rem; }
+  .nav-burger .hamburger div {
+    background-color: #343a40; }
+
+.hamburger {
+  display: flex;
+  width: 100%;
+  flex-direction: column; }
+  .hamburger > div {
+    background-color: #343a40;
+    border-radius: 5px;
+    height: 4px;
+    margin-bottom: 6px;
+    transition: background-color 0.2s ease-in-out, transform 0.3s ease-in-out; }
+    .hamburger > div:nth-child(2) {
+      transition: background-color 0.2s ease-in-out,  opacity 0.1s ease-in-out; }
+    .hamburger > div:last-child {
+      margin-bottom: 0; }
+  .hamburger:hover > div {
+    background-color: #fd7e14; }
+
+#navbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+
+.navbar-brand h3 {
+  font-size: 2rem; }
+
+#alert-safe {
+  position: relative;
+  padding: 2rem 4rem;
+  background-color: #e9ecef;
+  border-radius: 0.3rem;
+  margin-bottom: 0; }
+  #alert-safe .close {
+    position: absolute;
+    float: unset;
+    top: 1rem;
+    right: 1rem; }
+
+.test {
+  color: inherit; }
+
+@media screen and (min-width: 0) {
+  .nav-item.dropdown .dropdown-menu {
+    background-color: inherit;
+    border: none; }
+    .nav-item.dropdown .dropdown-menu li a:hover {
+      background-color: #6c757d;
+      color: #fff; } }
+
+@media screen and (max-width: 992px) {
+  #uber-exp > div:nth-child(3) {
+    margin-top: 3rem; } }
+
+@media screen and (min-width: 992px) {
+  #main-nav {
+    margin-left: 3rem; }
+  #uber-exp .card {
+    height: 100%; } }
+
+@media screen and (min-width: 1200px) {
+  .nav-item.dropdown .dropdown-menu {
+    border: 1px solid rgba(0, 0, 0, 0.2); } }
+
+.banner h3 {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  letter-spacing: 1px; }
+
+#content {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/computer.jpeg");
+  height: 80vh;
+  width: 100%;
+  background-size: 100%;
+  background-position: center center; }
+
+.order-now .card {
+  background-color: #fff;
+  height: 100%; }
+
+.order-now .card-header {
+  border-bottom: 0; }
+  .order-now .card-header h3 {
+    font-size: 2.5rem;
+    line-height: 1.5; }
+
+.order-now .card-body p {
+  font-size: 1.3rem;
+  line-height: 1; }
+
+.order-now .card-footer {
+  border-top: 0; }
+  .order-now .card-footer a {
+    font-size: 1rem;
+    line-height: 1; }
+
+.uber-title {
+  line-height: 1.6; }
+  .uber-title h3 {
+    margin-top: 2.5rem; }
+  .uber-title p {
+    margin-top: 1.2rem;
+    font-size: 1.2rem; }

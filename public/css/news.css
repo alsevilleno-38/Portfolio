@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap");
-img {
-  display: inline-block; }
-
-button {
+input, label, span, img, button, a {
   display: inline-block; }
 
 .row-flex {
@@ -84,65 +81,22 @@ html, body {
   .hamburger:hover > div {
     background-color: #fd7e14; }
 
-p {
-  margin: 0; }
+.form-fill {
+  margin: 1rem;
+  width: 250px; }
 
-ul {
-  margin: 0; }
-
-a {
-  text-decoration: none; }
-  a:hover {
-    text-decoration: none; }
-
-.brand {
+.submit {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  margin-left: 2rem; }
+  justify-content: space-between; }
 
-h1.logo {
-  margin: 0;
-  margin-right: 0.5rem;
-  font-size: 1.5rem; }
+.form-fill input:not([type="submit"]):not([type="checkbox"]) {
+  width: 60%; }
 
-.logo a {
-  color: #343a40; }
-
-.logo-brand i {
-  font-size: 2rem; }
-
-.main-nav {
-  padding: 0.5rem;
+.form-fill .sign-check {
+  width: 60%;
   display: flex;
-  flex-direction: row;
-  align-items: center; }
+  flex-direction: row; }
 
-.links li {
-  margin-right: 1.5rem; }
-  .links li:last-child {
-    margin-right: 0rem; }
-  .links li a i {
-    font-size: 2rem;
-    color: #343a40; }
-
-.wrapper-nav {
-  color: #343a40; }
-
-.main-section {
-  margin-top: 1.5rem; }
-
-.signup-form {
-  width: 70%;
-  margin: auto; }
-
-.list-checkbox > * {
-  margin-right: 1rem; }
-  .list-checkbox > *:last-child {
-    margin-right: 0; }
-
-@media screen and (max-width: 576px) {
-  .links {
-    display: none; }
-  .nav-burger {
-    display: block !important; } }
+.form-fill #sign-toggle {
+  margin-left: 0.4rem; }

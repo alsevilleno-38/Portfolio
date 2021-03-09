@@ -1,0 +1,25 @@
+total 251
+drwxr-xr-x 1 Angelo 197609      0 Mar  6 21:21 .
+drwxr-xr-x 1 Angelo 197609      0 Mar  5 23:32 ..
+drwxr-xr-x 1 Angelo 197609      0 Mar  2 09:30 .git
+-rw-r--r-- 1 Angelo 197609     15 Feb  8 20:27 .gitignore
+drwxr-xr-x 1 Angelo 197609      0 Mar  5 11:54 .vscode
+-rw-r--r-- 1 Angelo 197609    136 Mar  6 17:55 academy.js
+drwxr-xr-x 1 Angelo 197609      0 Mar  6 21:22 bash
+drwxr-xr-x 1 Angelo 197609      0 Mar  6 10:08 bin
+drwxr-xr-x 1 Angelo 197609      0 Mar  6 17:52 data
+drwxr-xr-x 1 Angelo 197609      0 Mar  6 18:01 exempt
+-rw-r--r-- 1 Angelo 197609    270 Mar  6 17:51 home.html
+-rw-r--r-- 1 Angelo 197609   2383 Mar  6 20:36 index.js
+-rw-r--r-- 1 Angelo 197609  11558 Feb  8 20:27 LICENSE
+drwxr-xr-x 1 Angelo 197609      0 Mar  6 11:45 node_modules
+-rw-r--r-- 1 Angelo 197609     78 Mar  6 18:01 nodemon.json
+-rw-r--r-- 1 Angelo 197609    534 Mar  6 16:36 package.json
+-rw-r--r-- 1 Angelo 197609 108027 Mar  6 10:21 package-lock.json
+drwxr-xr-x 1 Angelo 197609      0 Mar  6 12:42 page
+drwxr-xr-x 1 Angelo 197609      0 Mar  6 10:07 public
+drwxr-xr-x 1 Angelo 197609      0 Mar  6 20:45 py
+-rw-r--r-- 1 Angelo 197609     24 Mar  6 17:57 README.md
+drwxr-xr-x 1 Angelo 197609      0 Mar  5 10:26 scss
+drwxr-xr-x 1 Angelo 197609      0 Mar  6 10:07 src
+-rwxr-xr-x 1 Angelo 197609    101 Mar  6 21:25 start_cmd.sh

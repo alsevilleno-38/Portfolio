@@ -1,12 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap");
+input, label, span, img, button, a {
+  display: inline-block; }
+
+.row-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.column-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 * {
   font-family: "lato";
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
-p {
-  margin: 0; }
+p, h1, h2, h3 {
+  margin: 0;
+  padding: 0; }
 
 ul {
   list-style-type: none;
@@ -16,9 +30,6 @@ ul {
 html, body {
   padding: 0.1px;
   width: 100%; }
-
-img {
-  display: inline-block; }
 
 .wrapper-burger {
   position: relative;
@@ -70,21 +81,32 @@ img {
   .hamburger:hover > div {
     background-color: #fd7e14; }
 
-.container {
-  max-width: 70%;
-  margin: auto;
-  margin-top: 0.4rem; }
+body {
+  height: 200vh; }
 
-.btn {
-  outline: none;
-  border: none;
-  background-color: #fd8c2d;
-  color: #fff;
-  padding: 1rem 1.5rem;
-  letter-spacing: 0.8px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease-in-out; }
-  .btn:hover {
-    background-color: #f57102; }
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: black;
+  display: none;
+  opacity: 0; }
+  .backdrop .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -175px);
+    width: 25rem;
+    height: 16rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 10px black;
+    transition: transform 0.5s ease-in-out; }
+    .backdrop .modal.modal-intro {
+      transform: translate(-50%, -50%); }
+
+.d-block {
+  display: block !important; }
