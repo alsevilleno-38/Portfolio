@@ -56,12 +56,12 @@ let formSubmitHandler = function (e) {
     let password = $("#password").val();
     
     let request = $.ajax({
-        method: "GET",
-        url: `/data/data.xml`,
+        method: "POST",
+        url: `/indicate`,
         // method: "POST",
         // url: "/indicate",
         // context:$("#contain")[0],
-        datatype: "xml",
+        datatype: "html",
         // contentType: "application/x-www-form-urlencoded; charset=UTF-8'",        
         // data: {
         //     username: `${username ? username: "None"}`,
