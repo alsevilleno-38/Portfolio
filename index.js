@@ -6,99 +6,104 @@ import fs from "fs";
 import nodemailer from "nodemailer"
 import open from "open"
 import {dirname} from "path";
+import session from "express-session"
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 
 const port = 3000;
+const app = express();
+app.use(express.static(path.join(__dirname, "public")));
+app.use(bodyParser.urlencoded({ extended: true }));
 
-const routePages = (app, rel_path) => {
-    return new Promise((resolve, reject) => {
-        try {
-            const initializePageRouters = (afterInitialInit) => {
-                app.use(bodyParser.urlencoded({ extended: true }));
-                fs.readdir(rel_path, {withFileTypes: true}, (err, items) => {                
-                    app.use(express.static(path.join(__dirname, "public")));
-                    items.forEach(item => {
-                        if (item.isFile() && /.+[.]html/.test(item.name)) {
-                            // console.log(item);
-                            let filename = item.name;                                                
-                            app.get(`/${filename.substring(0, filename.indexOf(".html"))}`, (req, res, next) => {
-                                res.setHeader("Set-Cookie", "display=pc");
-                                res.sendFile(path.join(__dirname, "page", filename));                                
-                            })                                                
-                        }                            
-                    })
-                    app.get("/", (req, res, next) => {
-                        res.setHeader("Set-Cookie", "display=pc");
-                        res.sendFile(path.join(__dirname, "page", "index.html"));
-                    });
-                    app.post("/", (req, res, next) => {
-                        res.sendFile(path.join(__dirname, "page", "error", "error.html"));
-                    });                
-                    app.get("/indicate/:name", (req, res, next) => {
-                        console.log(req.query)
-                        res.type("json");
-                        res.json({
-                            html: `<p><b>Portfolio for all: ${req.params.name} with ${req.query.age}</b></p>`
-                        });
-                    })
-                    app.post("/indicate/", (req, res, next) => {
-                        console.log(req.body)
-                        console.log(req.body.username);
-                        // throw new Error("Erorr processing the command");
-                        console.log(req.body.password)
-                        res.type("json");
-                        res.json({
-                            html: `<p><b>Username: </b>${req.body.username == "" ? "None": req.body.username}</p>
-                                   <p><b>Age: </b>${req.body.password == "" ? "None" : req.body.password}</p>
-                                   <br>
-                                   <button id="special">Click me</button>
-                            `
-                        });
-                    })                    
-                    
-                    afterInitialInit(resolve, reject);
-                })                            
-            }                        
-            initializePageRouters((resolve, reject) => {
-                app.post("/extract", (req, res, next) => {                   
-                })
-                app.post("/news", (req, res, next) => {
-                    res.setHeader("Set-Cookie", "isSignToggle=true");
-                    // res.sendFile(path.join(__dirname, "page", "post", "news.html"));
-                    res.send("Successful");
-                    // res.json({name: "Pam"});J
-                })
-                app.post("/process", (req, res, next) => {
-                    
-                    res.setHeader("Set-Cookie", "isSignToggle=true");
-                    // res.sendFile(path.join(__dirname, "page", "post", "news.html"));
-                    res.send("<p>File is successful</p>");
-                    // res.json({name: "Pam"});
-                })
-                resolve(null);            
-            });
-        }
-        catch (err) {
-            reject("There is an error processing the routers");
-        }
-    })
-}
+app.post("/", (req, res, next) => {
+    res.sendFile(path.join(__dirname, "page", "error", "error.html"));
+});           
 
-const initialize = async () => {
-    const app = express();
+app.get("/extract", (req, res, next) => {    
+    // res.setHeader("Set-Cookie", "display=pc");
+    res.sendFile(path.join(__dirname, "page", "extract.html"));                                
+})        
+
+app.get("/atom", (req, res, next) => {        
+    res.sendFile(path.join(__dirname, "page", "atom.html"));                                
+})        
+        
+app.get("/create", (req, res, next) => {        
+    res.sendFile(path.join(__dirname, "page", "create.html"));                                
+})        
+app.get("/extract", (req, res, next) => {                   
+    res.sendFile(path.join(__dirname, "page", "extract.html"));                                
+})      
+
+app.get("/home", (req, res, next) => {        
+    res.sendFile(path.join(__dirname, "page", "home.html"));                                
+})        
+app.get("/main", (req, res, next) => {        
+    res.sendFile(path.join(__dirname, "page", "main.html"));                                
+})        
+app.get("/media", (req, res, next) => {        
+    res.sendFile(path.join(__dirname, "page", "media.html"));                                
+})        
+app.get("/news", (req, res, next) => {        
+    res.sendFile(path.join(__dirname, "page", "news.html"));                                
+})        
+app.get("/perform", (req, res, next) => {        
+    res.sendFile(path.join(__dirname, "page", "perform.html"));                                
+})        
+app.get("/predict", (req, res, next) => {    
+    res.sendFile(path.join(__dirname, "page", "predict.html"));
+});
+app.get("/prepare", (req, res, next) => {
+    res.sendFile(path.join(__dirname, "page", "prepare.html"));
+})
+app.get("/test", (req, res, next) => {
+    res.sendFile(path.join(__dirname, "page", "test.html"));
+})
+app.get("/ubisoft", (req, res, next) => {
+    res.sendFile(path.join(__dirname, "page", "ubisoft.html"));
+})
+app.get("/state", (req, res, next) => {
+    res.sendFile(path.join(__dirname, "page", "state.html"));
+})
+app.get("/unit", (req, res, next) => {
+    res.sendFile(path.join(__dirname, "page", "unit.html"));
+})
+app.get("/", (req, res, next) => {
+    res.sendFile(path.join(__dirname, "page", "index.html"));
+})
+app.use("/", (req, res, next) => {
+    res.sendFile(path.join(__dirname, "page", "error", "error.html"));
+})
+app.post("/success", (req, res, next) => {    
+    res.setHeader("Set-Cookie", "isSignToggle=true");
+    // res.sendFile(path.join(__dirname, "page", "post", "news.html"));
+    res.send("<p>File is successful</p>");
+    // res.json({name: "Pam"});
+})
+
+app.post("/indicate/", (req, res, next) => {                                            
+    req.session.isForm = true;                        
+    res.type("json");
+    res.json({
+        html: `<p><b>Username: </b>${req.body.username == "" ? "None": req.body.username}</p>
+               <p><b>Age: </b>${req.body.password == "" ? "None" : req.body.password}</p>
+               <br>
+               <button id="special">Click me</button>
+        `
+    });
+})              
+
+const initialize = async () => {    
     try {
-        await routePages(app, "page");                      
         app.listen(port);
         console.log(`App running at port ${port}...`);
-        // open('http://localhost:3000', {app: 'firefox'});
-        // console.log("test")    
     }
-    catch (err) {
-        console.log(err);
+    catch (e) {
+        console.log("Error processing!");
+        console.log(e);
     }
+  
 }    
-
 initialize();
