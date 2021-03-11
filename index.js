@@ -93,8 +93,8 @@ const initialize = async () => {
         await routePages(app, "page");                      
         app.listen(port);
         console.log(`App running at port ${port}...`);
-        // open('http://localhost:3000', {app: 'firefox'});
-        // console.log("test")    
+        open('http://localhost:3000', {app: 'firefox'});
+        console.log("test")    
     }
     catch (err) {
         console.log(err);
