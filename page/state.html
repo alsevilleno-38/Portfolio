@@ -1,27 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>State</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/state.css">    
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 </head>
 <body>  
-   <div class="backdrop">
-       <div class="modal">
-           <div class="modal-content">
-                <h3>Do you want to quit</h3>           
-                <p style="margin-top: 10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, qui facere tempore fugit iusto ab quisquam saepe aut atque velit!</p>                    
-                
-           </div>
-           <div class="close">&times;</div>
-       </div>
-   </div>
-   <button id="click-me">Click Me!</button>
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, quam quibusdam! Totam corporis voluptatum unde repudiandae asperiores. Maxime, numquam autem?</p>
+    <section id="attention">
+        <p>FREE BONUS: 5 SECRETS TO FAST & DELICIOUS COOKING</p>
+        <button>GET IT</button>
+    </section>
+    <div class="container">
+        <header id="brand-logo" style="margin-top: 0.8rem;">
+            <a href="" class="brand">
+                <img src="https://gimmedelicious.com/wp-content/themes/gimmedelicious/images/header.png" alt="" srcset="">
+            </a>
+            <div class="wrapper-burger">
+                <input type="checkbox" class="check-burger" name="" id="">
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </header>
+        <nav id="navigation">
+            <ul class="nav-icons">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Admission</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="social-media">
+                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram-square"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+            <ul class="nav-short">
+                <li><a href="">Home</a></li>
+                <span style="margin: 0 2px;">/</span>
+                <li><a href="">All Recipes</a></li>
+            </ul>
+        </nav>
+        <section id="main">
+            <header class="main-title">
+                <h1>DIY Iced Matcha Green Tea Latte</h1>
+                <p>By Layla Published in All Recipes </p>
+            </header>
+            <ul class="social-media__cards">
+                <li style="background-color: #c92228;"><a>
+                    <svg>
+                        version="1.1" xmlns="http://www.w3.org/2000/svg" ><path d="M0 10.656q0-1.92 0.672-3.616t1.856-2.976 2.72-2.208 3.296-1.408 3.616-0.448q2.816 0 5.248 1.184t3.936 3.456 1.504 5.12q0 1.728-0.32 3.36t-1.088 3.168-1.792 2.656-2.56 1.856-3.392 0.672q-1.216 0-2.4-0.576t-1.728-1.568q-0.16 0.704-0.48 2.016t-0.448 1.696-0.352 1.28-0.48 1.248-0.544 1.12-0.832 1.408-1.12 1.536l-0.224 0.096-0.16-0.192q-0.288-2.816-0.288-3.36 0-1.632 0.384-3.68t1.184-5.152 0.928-3.616q-0.576-1.152-0.576-3.008 0-1.504 0.928-2.784t2.368-1.312q1.088 0 1.696 0.736t0.608 1.824q0 1.184-0.768 3.392t-0.8 3.36q0 1.12 0.8 1.856t1.952 0.736q0.992 0 1.824-0.448t1.408-1.216 0.992-1.696 0.672-1.952 0.352-1.984 0.128-1.792q0-3.072-1.952-4.8t-5.12-1.728q-3.552 0-5.952 2.304t-2.4 5.856q0 0.8 0.224 1.536t0.48 1.152 0.48 0.832 0.224 0.544q0 0.48-0.256 1.28t-0.672 0.8q-0.032 0-0.288-0.032-0.928-0.288-1.632-0.992t-1.088-1.696-0.576-1.92-0.192-1.92z"></path>
+                    </svg>
+                </a>
+                </li>
+                <li style="background-color: #3a579a;"><a>
+                    <svg>
+                        version="1.1" xmlns="http://www.w3.org/2000/svg" ><path d="M0 10.656q0-1.92 0.672-3.616t1.856-2.976 2.72-2.208 3.296-1.408 3.616-0.448q2.816 0 5.248 1.184t3.936 3.456 1.504 5.12q0 1.728-0.32 3.36t-1.088 3.168-1.792 2.656-2.56 1.856-3.392 0.672q-1.216 0-2.4-0.576t-1.728-1.568q-0.16 0.704-0.48 2.016t-0.448 1.696-0.352 1.28-0.48 1.248-0.544 1.12-0.832 1.408-1.12 1.536l-0.224 0.096-0.16-0.192q-0.288-2.816-0.288-3.36 0-1.632 0.384-3.68t1.184-5.152 0.928-3.616q-0.576-1.152-0.576-3.008 0-1.504 0.928-2.784t2.368-1.312q1.088 0 1.696 0.736t0.608 1.824q0 1.184-0.768 3.392t-0.8 3.36q0 1.12 0.8 1.856t1.952 0.736q0.992 0 1.824-0.448t1.408-1.216 0.992-1.696 0.672-1.952 0.352-1.984 0.128-1.792q0-3.072-1.952-4.8t-5.12-1.728q-3.552 0-5.952 2.304t-2.4 5.856q0 0.8 0.224 1.536t0.48 1.152 0.48 0.832 0.224 0.544q0 0.48-0.256 1.28t-0.672 0.8q-0.032 0-0.288-0.032-0.928-0.288-1.632-0.992t-1.088-1.696-0.576-1.92-0.192-1.92z"></path>
+                    </svg>
+                </a>
+                </li>
+                <li style="background-color: #00abf0;"><a>
+                    <svg>
+                        version="1.1" xmlns="http://www.w3.org/2000/svg" ><path d="M0 10.656q0-1.92 0.672-3.616t1.856-2.976 2.72-2.208 3.296-1.408 3.616-0.448q2.816 0 5.248 1.184t3.936 3.456 1.504 5.12q0 1.728-0.32 3.36t-1.088 3.168-1.792 2.656-2.56 1.856-3.392 0.672q-1.216 0-2.4-0.576t-1.728-1.568q-0.16 0.704-0.48 2.016t-0.448 1.696-0.352 1.28-0.48 1.248-0.544 1.12-0.832 1.408-1.12 1.536l-0.224 0.096-0.16-0.192q-0.288-2.816-0.288-3.36 0-1.632 0.384-3.68t1.184-5.152 0.928-3.616q-0.576-1.152-0.576-3.008 0-1.504 0.928-2.784t2.368-1.312q1.088 0 1.696 0.736t0.608 1.824q0 1.184-0.768 3.392t-0.8 3.36q0 1.12 0.8 1.856t1.952 0.736q0.992 0 1.824-0.448t1.408-1.216 0.992-1.696 0.672-1.952 0.352-1.984 0.128-1.792q0-3.072-1.952-4.8t-5.12-1.728q-3.552 0-5.952 2.304t-2.4 5.856q0 0.8 0.224 1.536t0.48 1.152 0.48 0.832 0.224 0.544q0 0.48-0.256 1.28t-0.672 0.8q-0.032 0-0.288-0.032-0.928-0.288-1.632-0.992t-1.088-1.696-0.576-1.92-0.192-1.92z"></path>
+                    </svg>
+                </a>
+                </li>
+                <li style="background-color: #e55a27;">
+                    <a>
+                        <svg>
+                            version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M0 10.656q0-1.92 0.672-3.616t1.856-2.976 2.72-2.208 3.296-1.408 3.616-0.448q2.816 0 5.248 1.184t3.936 3.456 1.504 5.12q0 1.728-0.32 3.36t-1.088 3.168-1.792 2.656-2.56 1.856-3.392 0.672q-1.216 0-2.4-0.576t-1.728-1.568q-0.16 0.704-0.48 2.016t-0.448 1.696-0.352 1.28-0.48 1.248-0.544 1.12-0.832 1.408-1.12 1.536l-0.224 0.096-0.16-0.192q-0.288-2.816-0.288-3.36 0-1.632 0.384-3.68t1.184-5.152 0.928-3.616q-0.576-1.152-0.576-3.008 0-1.504 0.928-2.784t2.368-1.312q1.088 0 1.696 0.736t0.608 1.824q0 1.184-0.768 3.392t-0.8 3.36q0 1.12 0.8 1.856t1.952 0.736q0.992 0 1.824-0.448t1.408-1.216 0.992-1.696 0.672-1.952 0.352-1.984 0.128-1.792q0-3.072-1.952-4.8t-5.12-1.728q-3.552 0-5.952 2.304t-2.4 5.856q0 0.8 0.224 1.536t0.48 1.152 0.48 0.832 0.224 0.544q0 0.48-0.256 1.28t-0.672 0.8q-0.032 0-0.288-0.032-0.928-0.288-1.632-0.992t-1.088-1.696-0.576-1.92-0.192-1.92z"></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-buttons">
+                <button>JUMP TO RECIPE</button>
+                <button>PRINT RECIPE</button>
+            </div>
+            <article id="main-article">
+                <p>
+                    Meal-prep chicken marinated in a spicy garlic, chili, cilantro, lime marinade, served with rice and colorful bell peppers. This tasty flavor-packed meal is quick and easy makes a great lunch all week long.
+                </p>
+                <div class="img-container">
+                    <img src="https://gimmedelicious.com/wp-content/uploads/2017/09/Chili-Lime-Chicken-and-Rice-Meal-Prep-Bowls4.jpg" alt="">
+                </div>
+                <p>Today I’m sharing another fast and simple meal prep recipe. These chili lime chicken meal prep bowls make a delicious spicy lunch with the addition of colorful bell peppers and rice.</p>
+                <div class="img-article__highlight">
+
+                </div>
+                <p>Although I work from home, my days are busy busy busy and most of the time, I don’t have time to cook a fresh meal for lunch and dinner. have become a staple in our home. They’re super handy when you need a complete meal in minutes. My husband, kids and I just grab a bowl whenever we’re hungry and heat it in the microwave.</p>
+
+                <p>Today’s chicken recipe is packed full of the flavors of chili, lime, garlic, and cilantro. The chicken should marinate in this zesty mix for 20 minutes or up to 8 hours. The general rule is the longer you marinate the chicken, the better. When you’re ready to cook the chicken, heat a large skillet over medium-high heat and cook the chicken. Don’t forget to cook some rice and sliced bell peppers to go along with the chicken.</p>
+                <div class="img-article__menu-food">
+
+                </div>
+                <video src=""></video>
+            </article>
+        </section>    
+    </div>
 </body>
 <script src="js/state.js"></script>
 </html>

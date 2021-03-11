@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap");
-input, label, span, img, button, a, video {
+input, label, span, img, button, a, video, svg {
   display: inline-block; }
 
 .row-flex {
@@ -81,91 +81,106 @@ html, body {
   .hamburger:hover > div {
     background-color: #fd7e14; }
 
-.backdrop {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  top: 0;
-  left: 0;
-  z-index: 1;
-  display: none; }
-  .backdrop .modal {
-    position: inherit;
-    display: none;
-    width: 400px;
-    height: 200px;
-    background-color: white;
-    border-radius: 5px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3); }
-    .backdrop .modal .modal-content {
-      padding: 1.5rem; }
-    .backdrop .modal .close {
-      position: inherit;
-      top: 0;
-      right: 0;
-      padding: 5px;
-      font-size: 1.5rem;
-      line-height: 0.8;
-      cursor: pointer; }
+body {
+  height: 200vh; }
 
-.animation-target {
-  animation: introduction 1000ms linear both; }
+button {
+  border: 0;
+  outline: 0; }
 
-/* Generated with Bounce.js. Edit at http://bouncejs.com#%7Bs%3A%5B%7BT%3A%22c%22%2Ce%3A%22b%22%2Cd%3A1000%2CD%3A0%2Cf%3A%7Bx%3A1%2Cy%3A1%7D%2Ct%3A%7Bx%3A2%2Cy%3A1%7D%2Cs%3A1%2Cb%3A4%7D%2C%7BT%3A%22c%22%2Ce%3A%22b%22%2Cd%3A1000%2CD%3A0%2Cf%3A%7Bx%3A1%2Cy%3A1%7D%2Ct%3A%7Bx%3A1%2Cy%3A2%7D%2Cs%3A1%2Cb%3A6%7D%5D%7D */
-@keyframes introduction {
-  0% {
-    transform: translate(-50%, -50%); }
-  3.4% {
-    transform: matrix3d(1.316, 0, 0, 0, 0, 1.407, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) translate(-50%, -50%); }
-  4.7% {
-    transform: matrix3d(1.45, 0, 0, 0, 0, 1.599, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) translate(-50%, -50%); }
-  6.81% {
-    transform: matrix3d(1.659, 0, 0, 0, 0, 1.893, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) translate(-50%, -50%); }
-  9.41% {
-    transform: matrix3d(1.883, 0, 0, 0, 0, 2.168, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) translate(-50%, -50%); }
-  10.21% {
-    transform: matrix3d(1.942, 0, 0, 0, 0, 2.226, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) translate(-50%, -50%); }
-  13.61% {
-    transform: matrix3d(2.123, 0, 0, 0, 0, 2.332, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) translate(-50%, -50%); }
-  14.11% {
-    transform: matrix3d(2.141, 0, 0, 0, 0, 2.331, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) translate(-50%, -50%); }
-  17.52% {
-    transform: matrix3d(2.208, 0, 0, 0, 0, 2.239, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) translate(-50%, -50%); }
-  18.72% {
-    transform: matrix3d(2.212, 0, 0, 0, 0, 2.187, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) translate(-50%, -50%); }
-  21.32% {
-    transform: matrix3d(2.196, 0, 0, 0, 0, 2.069, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) translate(-50%, -50%); }
-  24.32% {
-    transform: matrix3d(2.151, 0, 0, 0, 0, 1.96, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) translate(-50%, -50%); }
-  25.23% {
-    transform: matrix3d(2.134, 0, 0, 0, 0, 1.938, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) translate(-50%, -50%); }
-  29.03% {
-    transform: matrix3d(2.063, 0, 0, 0, 0, 1.897, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) translate(-50%, -50%); }
-  29.93% {
-    transform: matrix3d(2.048, 0, 0, 0, 0, 1.899, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) translate(-50%, -50%); }
-  35.54% {
-    transform: matrix3d(1.979, 0, 0, 0, 0, 1.962, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) translate(-50%, -50%); }
-  36.74% {
-    transform: matrix3d(1.972, 0, 0, 0, 0, 1.979, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) translate(-50%, -50%); }
-  41.04% {
-    transform: matrix3d(1.961, 0, 0, 0, 0, 2.022, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) translate(-50%, -50%); }
-  44.44% {
-    transform: matrix3d(1.966, 0, 0, 0, 0, 2.032, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) translate(-50%, -50%); }
-  52.15% {
-    transform: matrix3d(1.991, 0, 0, 0, 0, 2.006, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) translate(-50%, -50%); }
-  59.86% {
-    transform: matrix3d(2.006, 0, 0, 0, 0, 1.99, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) translate(-50%, -50%); }
-  63.26% {
-    transform: matrix3d(2.007, 0, 0, 0, 0, 1.992, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) translate(-50%, -50%); }
-  75.28% {
-    transform: matrix3d(2.001, 0, 0, 0, 0, 2.003, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) translate(-50%, -50%); }
-  85.49% {
-    transform: matrix3d(1.999, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) translate(-50%, -50%); }
-  90.69% {
-    transform: matrix3d(1.999, 0, 0, 0, 0, 1.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) translate(-50%, -50%); }
-  100% {
-    transform: matrix3d(2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) translate(-50%, -50%); } }
+.container {
+  padding: 0 0.7rem; }
+
+#attention {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.6rem 0;
+  justify-content: center;
+  letter-spacing: 1px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  #attention p {
+    margin-right: 1rem;
+    font-size: 0.8rem; }
+  #attention button {
+    padding: 0.3rem 0.7rem;
+    background-color: #003a55;
+    color: white; }
+
+.brand img {
+  width: 200px; }
+
+#brand-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+
+#navigation > * {
+  margin-top: 0.7rem; }
+
+#navigation:first-child {
+  margin-top: 0; }
+
+.nav-short {
+  display: flex;
+  flex-direction: row;
+  justify-content: start; }
+  .nav-short li a {
+    text-decoration: none;
+    color: #343a40;
+    font-size: 0.8rem; }
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .social-media li {
+    margin-right: 0.6rem; }
+    .social-media li:last-child {
+      margin-right: 0; }
+    .social-media li a i {
+      font-size: 1.5rem; }
+
+.nav-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+  .nav-icons li {
+    border-radius: 3px; }
+    .nav-icons li a {
+      text-decoration: none;
+      padding: 0.3rem 0.6rem;
+      color: #343a40; }
+    .nav-icons li:first-child {
+      margin-left: 0; }
+    .nav-icons li:hover {
+      background-color: #343a40; }
+      .nav-icons li:hover a {
+        color: white; }
+
+#main {
+  margin-top: 1.5rem; }
+
+.main-title h1 {
+  font-size: 1.5rem;
+  color: #003a55;
+  letter-spacing: 0.7px;
+  margin-bottom: 0.7rem; }
+
+.main-title p {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.3px;
+  color: #a5a8a8; }
+
+.social-media__cards {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+  gap: 0.5rem; }
+  .social-media__cards li {
+    padding: 0.3rem; }
+    .social-media__cards li a svg {
+      width: 2rem;
+      height: 1.8rem; }
