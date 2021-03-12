@@ -17,10 +17,14 @@ const app = express();
 app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.post("/", (req, res, next) => {
-    res.sendFile(path.join(__dirname, "page", "error", "error.html"));
-});           
-
+app.get("/portfolio/bonapetit", (req, res, next) => {    
+    // res.setHeader("Set-Cookie", "display=pc");
+    res.sendFile(path.join(__dirname, "page", "portfolio", "bonapetit.html"));                                
+})
+app.get("/testing/auto", (req, res, next) => {    
+    // res.setHeader("Set-Cookie", "display=pc");
+    res.sendFile(path.join(__dirname, "page", "testing", "auto.html"));                                
+})
 app.get("/extract", (req, res, next) => {    
     // res.setHeader("Set-Cookie", "display=pc");
     res.sendFile(path.join(__dirname, "page", "extract.html"));                                

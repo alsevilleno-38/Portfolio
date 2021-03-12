@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
 
-input, label, span, img, button, a, video, svg {
+$hamburger-color: white;
+$hamburger-width: 20px;
+
+@function get-hambuger-height($hamburger-width) {
+    @return $hamburger-width / 10;
+}
+@function get-hambuger-space($hamburger-width) {
+    @return $hamburger-width / 5;
+}
+@function get-hambuger-roundness($hamburger-width) {
+    @return $hamburger-width / 2;
+}
+
+input, label, span, img, button, a, video, svg, small {
     display: inline-block;    
 }
 
@@ -72,9 +85,9 @@ html, body {
     // overflow: hidden;
 }
 
-.wrapper-burger {
+.wrapper__burger {
     position: relative;
-    width: 32px;    
+    width: $hamburger-width;    
     margin-right: 2rem;
 }
 .check-burger {
@@ -121,26 +134,26 @@ html, body {
     }
 }
 
-.nav-burger {
-    display: none !important;
-    margin: 0;
-    margin-left: auto;  
-    margin-right: 2rem;
-    .hamburger {
-        div {
-            background-color: $main-color;        
-        }
-    }
-}
+// .nav-burger {
+//     display: none !important;
+//     margin: 0;
+//     margin-left: auto;  
+//     margin-right: 2rem;
+//     .hamburger {
+//         div {
+//             background-color: $main-color;        
+//         }
+//     }
+// }
 .hamburger {
     display: flex;
     width: 100%;
     flex-direction: column;
     > div {        
-        background-color: $main-color;        
-        border-radius: 5px;
-        height: 4px;
-        margin-bottom: 6px;
+        background-color: $hamburger-color;        
+        border-radius: get-hambuger-roundness($hamburger-width);
+        height: get-hambuger-height($hamburger-width);
+        margin-bottom: get-hambuger-space($hamburger-width);
         transition: background-color 0.2s ease-in-out, transform 0.3s ease-in-out;
         &:nth-child(2) {
             transition: background-color 0.2s ease-in-out,  opacity 0.1s ease-in-out;
