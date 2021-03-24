@@ -73,6 +73,9 @@ html, body {
   .hamburger:hover > div {
     background-color: #fd7e14; }
 
+body {
+  padding: 2rem; }
+
 .box {
   width: 100px;
   height: 100px;
@@ -85,3 +88,17 @@ html, body {
 .active {
   opacity: 1;
   pointer-events: all; }
+
+section {
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-bottom: 4rem; }
+
+#section-1 {
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  opacity: 0;
+  transform: translateX(-4rem); }
+
+#section-1.add {
+  opacity: 1;
+  transform: unset; }
